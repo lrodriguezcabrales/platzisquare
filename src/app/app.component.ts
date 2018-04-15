@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PlatziSquare';
-  a=3;
-  b=5;
-  listo = false;
-  nombre:string = ''; // Puede ser simplemente nombre = ''
-  apellidos = '';
+  lugares:any = [ //Acepta cualquier tipo de objeto
+    {nombre: 'Floreria la Gardenia'},
+    {nombre: 'Donas la pasadita'},
+    {nombre: 'Veterinaria Huellitas felices'}
+  ] 
   
   //Se ejecuta al cargarse la clase
   constructor(){
@@ -20,7 +20,4 @@ export class AppComponent {
     }, 3000) //funcion anonima typescript ()=>{}
   }
 
-  hacerAlgo(){
-    alert('Haciendo algo');
-  }
 }
