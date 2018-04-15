@@ -8,16 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'PlatziSquare';
   lugares:any = [ //Acepta cualquier tipo de objeto
-    {nombre: 'Floreria la Gardenia'},
-    {nombre: 'Donas la pasadita'},
-    {nombre: 'Veterinaria Huellitas felices'}
+    { active: false, nombre: 'Floreria la Gardenia'},
+    { active: true, nombre: 'Donas la pasadita'},
+    { active: true, nombre: 'Veterinaria Huellitas felices'},
+    { active: false, nombre: 'Sushi Naruto'},
+    { active: true, nombre: 'Hotel el Dorado'},
+    { active: true, nombre: 'Hamburguesas Delirio'}
   ] 
   
   //Se ejecuta al cargarse la clase
   constructor(){
-    setTimeout(()=> {
-      this.listo = true;
-    }, 3000) //funcion anonima typescript ()=>{}
   }
 
 }
