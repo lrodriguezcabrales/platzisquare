@@ -14,8 +14,9 @@ export class AppComponent {
     { active: false, nombre: 'Sushi Naruto'},
     { active: true, nombre: 'Hotel el Dorado'},
     { active: true, nombre: 'Hamburguesas Delirio'}
-  ] 
-  
+  ];
+  lat:number = 0;
+  lng:number = 0;
   //Se ejecuta al cargarse la clase
   constructor(){
   }
